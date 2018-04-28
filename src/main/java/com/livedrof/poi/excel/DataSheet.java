@@ -1,4 +1,4 @@
-package com.livedrof.poi.excel.excel;
+package com.livedrof.poi.excel;
 
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.util.HSSFColor;
@@ -17,7 +17,7 @@ import java.util.UUID;
  * 代表一下个Sheet页
  *
  * @param <T>
- * @author congsl
+ * @author jacky
  */
 public class DataSheet<T> {
 
@@ -199,7 +199,7 @@ public class DataSheet<T> {
             if (c.getAbsColOffset() == 0) {
                 addCell(row, c.getAbsColOffset(), "合计：", this.getDataCellStyle(""));
             } else {
-                if(val == null) {
+                if (val == null) {
                     val = "--";
                 }
                 addCell(row, c.getAbsColOffset(), val, this.getDataCellStyle(val));

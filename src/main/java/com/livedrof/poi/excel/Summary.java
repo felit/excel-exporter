@@ -1,4 +1,4 @@
-package com.livedrof.poi.excel.excel;
+package com.livedrof.poi.excel;
 
 /**
  * 摘要信息,目前只支持文本，合并默认为5个。
